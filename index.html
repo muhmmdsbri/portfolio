@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Sabry | Portfolio</title>
+  <meta name="description" content="Mohamed Sabry - Professional Translator, Digital Marketer & AI Specialist" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">MS<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" title="Switch Language">AR</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i>
+          <span id="badgeText">Available for Freelance</span>
+        </div>
+        <h1 class="hero-title">
+          <span id="heroName">Hi, I'm Mohamed Sabry</span>
+        </h1>
+        <p class="hero-subtitle" id="heroSubtitle">Translator · Media Buyer · AI Specialist</p>
+        <p class="hero-desc" id="heroBio">
+          Al-Azhar University graduate with expertise in Arabic, English & Urdu translation, digital marketing, and AI-powered business solutions.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-briefcase"></i> <span id="viewWorkBtn">View My Work</span>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> <span id="hireBtn">Hire Me</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label" id="skillsLabel">Skills</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label" id="langLabel">Languages</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label" id="projectsLabel">Projects</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-frame">
+          <img src="assets/images/profile.jpg" alt="Mohamed Sabry" class="profile-img" id="profileImg" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p id="aboutBio">
+            I'm Mohamed Sabry, a graduate of Al-Azhar University's Faculty of Languages and Translation (2022), specializing in Urdu. Currently working as a Computer Science teacher, I combine my linguistic expertise with modern AI tools to deliver exceptional results across translation, digital marketing, and business systems.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <strong>Education</strong>
+                <span>Al-Azhar University, 2022 — Very Good (80.9%)</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <strong>Current Role</strong>
+                <span>Computer Science Teacher — Nursing Institute</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Egypt</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-language"></i>
+              <div>
+                <strong>Languages</strong>
+                <span>Arabic (Native) · English · Urdu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-certs">
+          <h3 class="certs-title"><i class="fas fa-award"></i> Certificates & Education</h3>
+          <div class="cert-cards" id="certCards">
+            <!-- Certificate images will be displayed here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills-section section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Do</span>
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-desc">Click on any skill to explore related projects</p>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Loaded by JS -->
+      </div>
+
+      <!-- SKILLS TABLE -->
+      <div class="skills-table-section">
+        <h3 class="skills-table-title">Technical & Professional Skills</h3>
+        <div class="skills-cards-grid">
+          <div class="skill-item-card">
+            <div class="skill-item-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="skill-item-content">
+              <h4>Languages</h4>
+              <p>Arabic (Native), English, Urdu</p>
+              <span class="proficiency-badge expert">Expert</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card">
+            <div class="skill-item-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="skill-item-content">
+              <h4>Programming</h4>
+              <p>Python, JavaScript, HTML, CSS, SQL</p>
+              <span class="proficiency-badge advanced">Advanced</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card">
+            <div class="skill-item-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="skill-item-content">
+              <h4>AI & Automation</h4>
+              <p>ChatGPT, Claude, Google AI, Automation Tools</p>
+              <span class="proficiency-badge expert">Expert</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card">
+            <div class="skill-item-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="skill-item-content">
+              <h4>Digital Marketing</h4>
+              <p>Facebook Ads, Google Ads, Media Buying, SEO</p>
+              <span class="proficiency-badge advanced">Advanced</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card">
+            <div class="skill-item-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="skill-item-content">
+              <h4>Design</h4>
+              <p>Canva, UI/UX Design, Logo Design, Graphics</p>
+              <span class="proficiency-badge advanced">Advanced</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card">
+            <div class="skill-item-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="skill-item-content">
+              <h4>Business Systems</h4>
+              <p>POS Systems, Inventory Management, Database Design</p>
+              <span class="proficiency-badge advanced">Advanced</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card">
+            <div class="skill-item-icon">
+              <i class="fas fa-language"></i>
+            </div>
+            <div class="skill-item-content">
+              <h4>Translation</h4>
+              <p>Legal, Technical, Business, Religious Content</p>
+              <span class="proficiency-badge expert">Expert</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card">
+            <div class="skill-item-icon">
+              <i class="fas fa-chalkboard-user"></i>
+            </div>
+            <div class="skill-item-content">
+              <h4>Teaching</h4>
+              <p>Computer Science, AI Tools, Digital Skills</p>
+              <span class="proficiency-badge advanced">Advanced</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects-section section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" id="portfolioTag">Portfolio</span>
+        <h2 class="section-title" id="projectsTitle">My Projects</h2>
+        <p class="section-desc" id="projectsDesc">Browse projects by skill category</p>
+      </div>
+      
+      <!-- CATEGORY TABS -->
+      <div class="projects-tabs" id="projectsTabs">
+        <button class="tab-btn active" data-category="all" id="tabAll">
+          <i class="fas fa-th"></i> <span id="allText">All Projects</span>
+        </button>
+        <button class="tab-btn" data-category="translation" id="tabTranslation">
+          <i class="fas fa-globe"></i> <span id="translationText">Translation</span>
+        </button>
+        <button class="tab-btn" data-category="ai" id="tabAI">
+          <i class="fas fa-robot"></i> <span id="aiText">AI Projects</span>
+        </button>
+        <button class="tab-btn" data-category="marketing" id="tabMarketing">
+          <i class="fas fa-chart-line"></i> <span id="marketingText">Media Buying</span>
+        </button>
+        <button class="tab-btn" data-category="systems" id="tabSystems">
+          <i class="fas fa-laptop"></i> <span id="systemsText">Business Systems</span>
+        </button>
+        <button class="tab-btn" data-category="design" id="tabDesign">
+          <i class="fas fa-palette"></i> <span id="designText">Graphic Design</span>
+        </button>
+      </div>
+
+      <!-- PROJECTS GRID -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Loaded by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing-section section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Services & Rates</span>
+        <h2 class="section-title">Pricing</h2>
+        <p class="section-desc">Transparent pricing based on current market rates</p>
+      </div>
+      
+      <!-- PRICING CARDS -->
+      <div class="pricing-grid" id="pricingGrid">
+        <!-- Loaded by JS -->
+      </div>
+
+      <!-- PRICING CARDS GRID -->
+      <h3 class="pricing-section-title">Service Pricing Overview</h3>
+      <div class="pricing-cards-grid">
+        <!-- Translation -->
+        <div class="pricing-service-card">
+          <div class="pricing-service-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h4>Professional Translation</h4>
+          <div class="pricing-packages-list">
+            <div class="pricing-package-item">
+              <span class="package-label">Standard</span>
+              <span class="package-price">$0.15/word</span>
+              <span class="package-desc">Arabic ↔ English</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Premium</span>
+              <span class="package-price">$0.20/word</span>
+              <span class="package-desc">Arabic ↔ Urdu</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Expert</span>
+              <span class="package-price">$0.25/word</span>
+              <span class="package-desc">Legal/Technical</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Media Buying -->
+        <div class="pricing-service-card">
+          <div class="pricing-service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4>Media Buying</h4>
+          <div class="pricing-packages-list">
+            <div class="pricing-package-item">
+              <span class="package-label">Starter</span>
+              <span class="package-price">$100</span>
+              <span class="package-desc">Campaign Setup</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Growth</span>
+              <span class="package-price">$250</span>
+              <span class="package-desc">Full Management</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Pro</span>
+              <span class="package-price">$500</span>
+              <span class="package-desc">Multi-Platform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Systems -->
+        <div class="pricing-service-card">
+          <div class="pricing-service-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h4>Business Systems</h4>
+          <div class="pricing-packages-list">
+            <div class="pricing-package-item">
+              <span class="package-label">Basic</span>
+              <span class="package-price">$150</span>
+              <span class="package-desc">Simple POS</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Standard</span>
+              <span class="package-price">$300</span>
+              <span class="package-desc">POS + Inventory</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Enterprise</span>
+              <span class="package-price">$500+</span>
+              <span class="package-desc">Full System</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="pricing-service-card">
+          <div class="pricing-service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h4>Graphic Design</h4>
+          <div class="pricing-packages-list">
+            <div class="pricing-package-item">
+              <span class="package-label">Logo</span>
+              <span class="package-price">$25</span>
+              <span class="package-desc">Single Design</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Pack</span>
+              <span class="package-price">$50</span>
+              <span class="package-desc">5 Designs</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Brand</span>
+              <span class="package-price">$100</span>
+              <span class="package-desc">Complete Kit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Consulting -->
+        <div class="pricing-service-card">
+          <div class="pricing-service-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h4>AI Consulting</h4>
+          <div class="pricing-packages-list">
+            <div class="pricing-package-item">
+              <span class="package-label">Session</span>
+              <span class="package-price">$30</span>
+              <span class="package-desc">1-Hour Consult</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Workshop</span>
+              <span class="package-price">$75</span>
+              <span class="package-desc">AI Training</span>
+            </div>
+            <div class="pricing-package-item">
+              <span class="package-label">Integration</span>
+              <span class="package-price">$150</span>
+              <span class="package-desc">AI Integration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRICING NOTES -->
+      <div class="pricing-notes">
+        <p><strong>💡 Note:</strong> All prices are in USD. Custom packages and bulk discounts available upon request. Contact me for detailed quotes on larger projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-desc">Ready to work together? Reach out via any channel below</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:muhmmdsbri@gmail.com">muhmmdsbri@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-facebook contact-icon" style="color: #1877F2;"></i>
+            <div>
+              <strong>Facebook</strong>
+              <a href="https://www.facebook.com/share/1Up1LsAG96/?mibextid=wwXIfr" target="_blank">Mohamed Sabry</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-instagram contact-icon" style="color: #E4405F;"></i>
+            <div>
+              <strong>Instagram</strong>
+              <a href="https://www.instagram.com/m7mmd_sbri?igsh=MXIyMHE4MHBzYjVuNw%3D%3D&utm_source=qr" target="_blank">@m7mmd_sbri</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-whatsapp contact-icon whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/201026972512" target="_blank">+20 102 697 2512</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-linkedin contact-icon linkedin"></i>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://linkedin.com/in/muhmmdsbri" target="_blank">linkedin.com/in/muhmmdsbri</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service">
+              <option value="">Select a service...</option>
+              <option value="translation">Translation</option>
+              <option value="marketing">Media Buying</option>
+              <option value="systems">Business System</option>
+              <option value="design">Graphic Design</option>
+              <option value="ai">AI Consulting</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">MS<span>.</span></div>
+        <p class="footer-text">© 2026 Mohamed Sabry. All Rights Reserved.</p>
+        <div class="footer-socials">
+          <a href="mailto:muhmmdsbri@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.facebook.com/share/1Up1LsAG96/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/m7mmd_sbri?igsh=MXIyMHE4MHBzYjVuNw%3D%3D&utm_source=qr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/201026972512" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://linkedin.com/in/muhmmdsbri" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SKILL MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="skillModal">
+      <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      <div class="modal-header" id="modalHeader"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

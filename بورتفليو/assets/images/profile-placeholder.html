@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Generator</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    canvas {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      display: block;
+      margin: 20px 0;
+      background: white;
+    }
+    button {
+      background: #4F46E5;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      margin: 10px 0;
+    }
+    button:hover {
+      background: #4338CA;
+    }
+    .info {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>صورة احترافية مؤقتة</h1>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <button onclick="downloadImage()">تحميل الصورة</button>
+    <div class="info">
+      <h3>📝 تعليمات:</h3>
+      <p>1. اضغط على "تحميل الصورة"</p>
+      <p>2. احفظ الصورة باسم: <strong>profile.jpg</strong></p>
+      <p>3. ضعها في مجلد: <strong>assets/images/</strong></p>
+      <p>4. ستظهر تلقائياً في البورتفليو</p>
+    </div>
+  </div>
+
+  <script>
+    function drawProfileImage() {
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      // Background gradient
+      const gradient = ctx.createLinearGradient(0, 0, 300, 300);
+      gradient.addColorStop(0, '#4F46E5');
+      gradient.addColorStop(1, '#7C3AED');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, 300, 300);
+
+      // Circle background
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+      ctx.beginPath();
+      ctx.arc(150, 150, 140, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Initials circle
+      ctx.fillStyle = 'white';
+      ctx.beginPath();
+      ctx.arc(150, 130, 80, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Initials text
+      ctx.fillStyle = '#4F46E5';
+      ctx.font = 'bold 80px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('MS', 150, 130);
+
+      // Name
+      ctx.fillStyle = 'white';
+      ctx.font = 'bold 24px Arial';
+      ctx.textAlign = 'center';
+      ctx.fillText('Mohamed Sabry', 150, 240);
+
+      // Title
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      ctx.font = '14px Arial';
+      ctx.fillText('Professional Translator', 150, 265);
+      ctx.fillText('& Digital Marketer', 150, 285);
+    }
+
+    function downloadImage() {
+      const canvas = document.getElementById('canvas');
+      const link = document.createElement('a');
+      link.href = canvas.toDataURL('image/jpeg', 0.95);
+      link.download = 'profile.jpg';
+      link.click();
+    }
+
+    // Draw on load
+    window.addEventListener('load', drawProfileImage);
+  </script>
+</body>
+</html>
